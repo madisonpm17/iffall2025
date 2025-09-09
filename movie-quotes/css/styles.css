@@ -1,0 +1,54 @@
+body{
+    margin-left:70px;
+    margin-bottom: 70px;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    text-align: center
+}
+
+.venkman {
+color:maroon;
+font-weight:bold;
+}
+
+.barrett {
+    color:forestgreen;
+    font-weight:bold
+}
+
+.italic {
+    font-style:italic;
+}
+
+.mayor {
+    color:forestgreen;
+    font-weight:bold 
+}
+
+.stantz {
+    color: navy;
+    font-weight:bold
+}
+
+.spengler {
+    color:darkolivegreen;
+    font-weight:bold
+}
+
+.zeddemore {
+    color:darkred;
+    font-weight:bold
+}
