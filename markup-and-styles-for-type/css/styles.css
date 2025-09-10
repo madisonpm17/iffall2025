@@ -1,0 +1,65 @@
+html{
+    color:forestgreen;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family:'Roboto Condensed', sans-serif;
+    /* whichever comes second overrules */
+    font-size:15pt;
+}
+
+body{
+    margin:10%;
+}
+
+h1{
+    color:black;
+    letter-spacing:-.02em;
+    text-transform:capitalize;
+    text-indent:-1rem;
+    font-family:"vista-slab", serif;
+    /* negative is outdent, postive indent */
+}
+
+p{
+    font-size:13pt;
+    line-height: 1.4;
+}
+
+sup{
+    font-size:60%;
+}
+
+dfn{
+    font-weight:bold;
+    color:navy;
+    text-transform:uppercase;
+}
+
+small{
+    font-style:italic;
+}
+
+aside{
+    text-align:center;
+}
+
+cite{
+    text-align:right;
+    display:block;
+}
+
+article{
+    margin:6rem 0;
+    /* first number is top and bottom, second is left and right */
+}
+
+section{
+    margin:2.5em 0;
+}
+
+a{
+    text-decoration:none;
+}
+
+code{
+    color:steelblue;
+}
