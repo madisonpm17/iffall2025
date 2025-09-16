@@ -1,0 +1,83 @@
+html{
+    color:black;
+    font-family:'Roboto Condensed', sans-serif;
+    /* whichever comes second overrules */
+}
+
+.colored-box {
+    background-color: #f6ebff; /* Light blue background */
+    border: 2px solid #704991; /* Solid blue border */
+    padding: 15px; /* Space between text and border */
+    margin: 10px 0;
+    border-radius: 10px; 
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+header{
+    text-align: center;
+    line-height: 1.25em;
+}
+
+p {
+    font-size:15pt;
+}
+
+h1 {
+    font-size: 36pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+.label {
+    font-size: 10pt;
+    color:#512d6e
+}
+
+.light {
+    font-weight: 200;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.narrow {
+    letter-spacing: -.08em;
+}
+
+.wide {
+    letter-spacing: .08em;
+
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
