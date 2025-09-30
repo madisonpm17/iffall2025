@@ -1,0 +1,32 @@
+html{
+    margin:150px;
+    margin-top:60px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size:48px
+}
+
+
+img{
+    width: 200px;
+    height: auto;
+
+}
+
+.steps{
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+.website{
+    font-weight:bold;
+}
+
+.bold {
+    font-weight: bold;
+}
