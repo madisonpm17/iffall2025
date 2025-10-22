@@ -1,0 +1,162 @@
+html{
+    margin-top:-40px;
+    margin-left: 360px;
+    margin-right: 360px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.title-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: last baseline;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.two-column-list {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+h1{
+    font-size:130px;
+    font-family:"Instrument Serif", serif;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+h2{
+    font-size: 40px;
+    font-family: "Instrument Serif", serif;
+    font-weight: normal;
+
+}
+
+.text-section {
+    text-align: right;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+p{
+    font-family: "Livvic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+li {
+     font-family: "Livvic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+p.details {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 10px;
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.date {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+
+img{
+    width: 380px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    padding-left: 50px;
+    
+}
+
+.text-image-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; 
+}
+
+.image-block {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 16px;
+    margin-top: 120px;
+}
+
+.image-block img {
+    width: 380px;  /* or whatever size works for your layout */
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+      padding-bottom: 20px;
+}
+
+div.description {
+    margin-top: -60px;
+}
+
+div.description img {
+    float: right;
+}
+
+.ingredients {
+    padding-top: 30px;
+}
+
+.rounded-background {
+  background-color: #fce0db; 
+  padding-left: 50px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  border-radius: 15px; 
+  display: inline-block;
+
+}
+
+.instructions {
+    padding-top: 50px;
+}
+
+.steps{
+    font-weight: normal;
+    font-family: "instrument serif";
+    font-size: 36px;
+
+}
+
+.step-text {
+     width: 300px;
+      flex: 1;
+}
+
+.website{
+    font-weight:bold;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-style: italic;
+}
