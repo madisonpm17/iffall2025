@@ -1,0 +1,587 @@
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	margin: 40px;
+}
+
+h1 {
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.button_container {
+	border: 1px solid #ddd;
+	margin: 0 10px 10px 0;
+	padding: 20px;
+	width: 300px;
+	height: 300px;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+a#btn_spotify {
+	display: inline-block;
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 25px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px 40px 0 40px;
+	background-color: #2ebd59;
+	border: 2px solid #2ebd59;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+a#btn_spotify:hover {
+	background-color: #fff;
+	border: 2px solid #000;
+	color: #000;
+}
+
+a#btn_amazon {
+	display: block;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border-radius: 50px;
+	margin: auto;
+	margin-top: 75px;
+	padding-top: 8px;
+	background-color: #232f3e;
+	color: #fff;
+	text-align: center;
+	font-size: 60px;
+	transition: all .2s;
+}
+
+a#btn_amazon:hover {
+background-color: #fc9a18;
+}
+
+a#btn_twitter {
+	display: inline-block;
+	height: 40px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: auto;
+	margin-top: 105px;
+	padding: 10px 30px 0 30px;
+	background-color: #56cdf1;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a#btn_twitter:hover {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+	background: rgb(46,191,236); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+a#btn_indiegogo {
+	display: inline-block;
+	position: relative;
+	margin:auto;
+	margin-top: 100px;
+	padding: 8px 16px;
+	background-color: #fff;
+	color: #eb1478;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: -2px;
+	transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #eb1478;
+	transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+	color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+a#btn_indiegogo span {
+	position: relative;
+	z-index: 10;
+}
+
+a#btn_instagram{
+    display: inline-block;
+	height: 60px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 10px 20px 0 20px;
+    text-decoration: none;
+    font-family: "DM Sans";
+    color: white;
+    font-size: 30px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ea9f2e+0,f22e86+46,8d27f4+99 */
+    background: linear-gradient(45deg, #ea9f2e 0%,#f22e86 46%,#8d27f4 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+a#btn_instagram:hover{
+    opacity: 60%;
+    transition: .5s;
+}
+
+a#btn_oldnavy{
+    display: inline-block;
+    width: 140px;
+    height: 30px; 
+    margin:auto;
+    margin-top: 80px;
+    padding: 10px;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    background-color: navy; 
+    border-radius: 50%; 
+    border: 5px solid navy;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto Flex";
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+a#btn_oldnavy:hover{
+    background-color: white;
+    color:navy;
+    transition: .3s;
+}
+
+.tonightshow{
+    transition: transform 0.7s ease;
+    margin:auto;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.tonightshow:hover{
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(1.2);
+  }
+  to {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+a#btn_npr {
+  display: inline-flex;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  text-decoration: none;
+  margin-top: 90px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.block {
+  padding: 0px 12px 0px 12px;
+  font-size: 35px;
+  font-family: "DM Sans";
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.n { background-color: #d62021; } 
+.p { background-color: #000000; } 
+.r { background-color: #1a5dab; } 
+
+a#btn_npr:hover .n {
+  background-color: #ff4d4d;
+  transition-delay: 0s;
+}
+
+a#btn_npr:hover .p {
+  background-color: #444444;
+  transition-delay: 0.15s;
+}
+
+a#btn_npr:hover .r {
+  background-color: #4d8dff;
+  transition-delay: 0.3s;
+}
+
+a#btn_moo {
+  display: inline-flex;      
+  position: relative;       
+  gap: 10px;
+  margin-top: 75px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #4ea96b;
+  font-family: "Quicksand";
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}   
+
+a#btn_moo:hover{
+    font-weight: 700;
+}
+
+a#btn_moo span:last-child {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.droplet {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 150px; 
+  margin-top: 7px;
+  display: inline-flex;
+  z-index: 1; 
+}
+
+.droplet::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: top;
+  z-index: 2;
+}
+
+a#btn_moo:hover .droplet::after {
+  transform: scaleY(0);
+}
+
+
+a#btn_moo .droplet i {
+  clip-path: inset(0 0 0 0);
+  opacity: 1;
+}
+
+.droplet i {
+  font-size: 24px;
+  color: #4ea96b;
+  z-index: 1;
+}
+
+a#btn_cocacola {
+  margin: 0;
+  margin-top: 70px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 30px 10px; 
+  background: linear-gradient(red 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+  background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.btn{
+  position: relative;
+  font-weight: 400;
+  color: white;
+  background: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+a#btn_cocacola:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+}
+
+a#btn_cocacola:hover {
+    color: white;
+    transition-delay: .25s;
+}
+
+a#btn_cocacola img.hover {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+a#btn_cocacola:hover img.hover {
+  opacity: 1;
+  z-index: 1;
+}
+a#btn_cocacola:hover img.normal {
+    opacity:0;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 200px;      
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.img-wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 200px;
+  height: auto;  
+  transition: opacity 0.3s ease;
+}
+
+.img-wrapper img.normal {
+  opacity: 1;
+  z-index: 1;
+}
+
+.img-wrapper img.hover {
+  opacity: 0;
+  z-index: 2;
+}
+
+a#btn_thecolorrun{
+  position: relative;
+  display: inline-block;
+  margin-top: 90px;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Anton SC", sans-serif;
+  color: #301934;
+  text-decoration: none;
+  overflow: hidden;
+  border: 2px solid #301934;
+  transition: color 0.3s ease;
+}
+
+a#btn_thecolorrun::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,   
+    #E61A7F 33.33%, 
+    #F9ED32 33.33% 66.66%,
+    #00AEEF 66.66% 100%
+  ) ;  
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+a#btn_thecolorrun:hover::before {
+  left: 0; 
+}
+
+a#btn_thecolorrun:hover {
+  color: #301934;
+}
+
+a#btn_thenewyorker {
+  display: inline-block;
+  margin: 60px 0 0 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.newyorker {
+  position: relative;
+  display: inline-block;
+  line-height: 0; 
+}
+
+.newyorker img {
+  display: block;
+}
+
+.newyorker::before,
+.newyorker::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: black;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-out;
+  margin-top: 60px;
+}
+
+.newyorker::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.newyorker::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.newyorker:hover::before,
+.newyorker:hover::after {
+  transform: scaleX(1);
+}
+
+a#btn_explodingkittens {
+    margin-top: 90px;
+    color: black;
+    display: flex;
+    padding: 15px 15px;
+    border: none;
+    font-family: "Anton SC", sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden;  */
+}
+
+    
+a#btn_explodingkittens::before,
+a#btn_explodingkittens::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(ellipse at center, #ffb76b 0%,#ffa73d 35%,#ff7c00 61%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.7s ease-out; 
+    }
+
+a#btn_explodingkittens::before {
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+    }
+
+   
+a#btn_explodingkittens::after {
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+    }
+
+    a#btn_explodingkittens:hover::before,
+    a#btn_explodingkittens:hover::after {
+        opacity: 1;
+        transform: scale(2); 
+        width: 200px; 
+        height: 200px; 
+        top: -50px; 
+        left: -5px; 
+    }
+
+    @keyframes burst {
+        0% { transform: scale(0); opacity: 1; }
+        100% { transform: scale(2); opacity: 0; }
+    }
+
+     a#btn_explodingkittens:hover::before,
+     a#btn_explodingkittens:hover::after {
+        animation: burst 0.7s forwards;
+    }
+
+a#btn_botanicalgarden {
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 2.5px;
+  color: white;
+  background-color: #4b7b3b; 
+  border: 2px solid #4b7b3b;
+  border-radius: 6px;
+  text-decoration: none;
+  overflow: visible;
+  transition: all 0.4s ease;
+
+}
+
+a#btn_botanicalgarden .seedling {
+  position: absolute;
+  top: -30px;  
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  font-size: 24px;
+  color: #4b7b3b;
+  transition: transform 0.4s ease, top 0.4s ease;
+  z-index: 2;
+}
+
+
+a#btn_botanicalgarden:hover {
+  background-color: transparent;  
+  color: #4b7b3b;                 
+}
+
+a#btn_botanicalgarden:hover .seedling {
+  transform: translateX(-50%) scale(1.2); 
+  top: -40px;                            
+}
+
