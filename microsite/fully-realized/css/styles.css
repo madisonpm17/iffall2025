@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf9ef;
+  color: #222;
+}
+
+/*HEADER*/
+header {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0 5px;
+}
+
+.banner img.headshot {
+  width: 80px;
+  height: 100px;
+}
+
+.banner h1 {
+  color: black;
+  font-family: revla-slab, sans-serif;
+  font-size: 120px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+/*NAV*/
+nav {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: light;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 12px 18px;
+  display: block;
+}
+
+nav a:hover,
+nav a.active {
+  font-weight: bold;
+}
+
+/*PANELS*/
+main.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin: 0px 0;
+}
+
+.panel {
+  position: relative;
+  width: 80%;
+  height:100%;
+  max-width: 900px;
+  aspect-ratio: 4 / 1;
+  overflow: visible;
+  margin: 0;
+}
+
+.panel.small {
+  width: 45%;
+  aspect-ratio: 4 / 1.3;
+}
+
+.shape-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  z-index: 0;
+}
+
+
+
+.panel-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.panel-content h2 {
+    position: relative;
+  font-size: 50pt;
+  margin: 0;
+  padding: 0 275px;
+}
+
+.panel-content img {
+  width: 300px;
+  height: auto;
+}
+
+/*CONTENT PAGE*/
+.content-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.section-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+.section-header .shape-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: visible;
+  z-index: 0;
+}
+
+.section-header h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 25px 50px;
+  margin: 0;
+  font-size: 50pt;
+}
+
+.text-content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.h2 {
+    font-weight: normal;
+}
+
+
+.Redondo {
+    font-family: redondo-ave, sans-serif;
+}
+
+h2.Redondo {
+    font-size: 70px;
+    width: auto;
+}
+
+.Estro {
+    font-family: estro-mn, sans-serif;
+    font-size: 72pt;
+    font-weight: normal;
+}
+
+.Revla {
+    font-family: revla-slab, serif;
+    font-weight: normal;
+}
+
+#early-image {
+    position: absolute;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    scale: 125%;
+}
+
+#vinyl-image {
+    position: absolute;
+    margin-left: 470px;
+    scale: 70%;
+}
+
+#star-image {
+    position:absolute;
+    margin-left:450px;
+}
+
+#tdtmd-image {
+    position: absolute;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    scale: 65%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.headshot {
+   scale: 150%; 
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#earlylifetext {
+    margin-left: 350px;
+    
+}
+
+h2#earlylifetext {
+    width: 1000px;
+    padding: 0;
+}
+
+#careertext {
+     margin-left: 180px;
+     padding:0;
+}
+
+#tdtmdtext {
+     margin-left: 130px;
+     padding-right: 150px;
+     margin-bottom: 20px;
+}
+
+#legacytext {
+      margin-left: 250px;
+      padding: 0;
+}
+
+#pageearlylife {
+    float: right;
+    margin-left: -10;
+    scale: 85%;
+}
+
+#pagecareer {
+    float: right;
+    margin-left: -10;
+    scale: 85%;
+}
+
+#pagetdtmd {
+    float: right;
+    margin-left: -10;
+    scale: 10%;
+}
+
+#pagelegacy {
+    float: right;
+    scale: 75%;
+    margin: 0;
+}
+
+div.mediaplayer {
+    float: right;
+      width: 400px;
+    display: flex; flex-direction: column;
+    align-items: flex-end;
+
+}
