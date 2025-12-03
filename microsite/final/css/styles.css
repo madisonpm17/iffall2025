@@ -1,0 +1,457 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf9ef;
+  color: #222;
+}
+
+/*HEADER*/
+header {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0 5px;
+}
+
+.banner img.headshot {
+  width: 80px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.banner img.headshot:hover {
+  transform: scale(1.2); 
+}
+
+.banner h1 {
+  color: black;
+  font-family: revla-slab, sans-serif;
+  font-size: 120px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+/*NAV*/
+nav {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: light;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 12px 18px;
+  display: block;
+}
+
+nav a:hover,
+nav a.active {
+  font-weight: bold;
+}
+
+/*PANELS*/
+main.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin: 0px 0;
+}
+
+.panel {
+  position: relative;
+  width: 80%;
+  height:100%;
+  max-width: 900px;
+  aspect-ratio: 4 / 1;
+  overflow: visible;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.panel:hover {
+  transform: scale(1.05); 
+  z-index: 10; 
+}
+
+.panel.small {
+  width: 45%;
+  aspect-ratio: 4 / 1.3;
+}
+
+.shape-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  z-index: 0;
+}
+
+
+
+.panel-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.panel-content h2 {
+    position: relative;
+  font-size: 50pt;
+  margin: 0;
+  padding: 0 275px;
+}
+
+.panel-content img {
+  width: 300px;
+  height: auto;
+}
+
+/*CONTENT PAGE*/
+.content-page {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.section-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.section-header .shape-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: visible;
+  z-index: 0;
+  scale: 75%;
+  margin-bottom:0;
+}
+
+.section-header h2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 25px 150px;
+  margin: 0;
+  font-size: 50pt;
+}
+
+.text-content p {
+  line-height: 1.7;
+  margin-top: 40px;
+  margin-right: 110px;
+  margin-left: 110px;
+}
+
+.h2 {
+    font-weight: normal;
+}
+
+
+.Redondo {
+    font-family: redondo-ave, sans-serif;
+}
+
+h2.Redondo {
+    font-size: 70px;
+    width: auto;
+}
+
+.Estro {
+    font-family: estro-mn, sans-serif;
+    font-size: 72pt;
+    font-weight: normal;
+}
+
+.Revla {
+    font-family: revla-slab, serif;
+    font-weight: normal;
+}
+
+#early-image {
+    position: absolute;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    scale: 125%;
+}
+
+#vinyl-image {
+    position: absolute;
+    margin-left: 470px;
+    scale: 70%;
+}
+
+#star-image {
+    position:absolute;
+    margin-left:450px;
+}
+
+#tdtmd-image {
+    position: absolute;
+    margin-left: 80px;
+    margin-bottom: 35px;
+    scale: 65%;
+    transform: rotate(-3.5deg);
+}
+
+a{
+    text-decoration: none;
+}
+
+.headshot {
+   scale: 150%; 
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#earlylifetext {
+    margin-left: 350px;
+    
+}
+
+h2#earlylifetext {
+    width: 1000px;
+    padding: 0;
+}
+
+#careertext {
+     margin-left: 180px;
+     padding:0;
+}
+
+#tdtmdtext {
+     margin-left: 130px;
+     padding-right: 150px;
+     margin-bottom: 20px;
+}
+
+#legacytext {
+      margin-left: 250px;
+      padding: 0;
+}
+
+#pageearlylife {
+    align-content: center;
+    display: block;
+    scale: 75%;
+    margin-left: 100px;
+
+    padding: 0%;
+}
+
+#pagecareer {
+    display: block; 
+    margin: 20px auto; 
+    scale: 1; 
+    
+   
+    width: 55%; 
+    height: auto;
+}
+
+#pagetdtmd {
+    float: right;
+    margin-left: -10;
+    scale: 10%;
+}
+
+#pagelegacy {
+    float: right;
+    scale: 75%;
+    margin: 0;
+}
+
+.panel:has(#legacytext) {
+  margin-top: -20px;
+}
+
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body {
+	height: 100%;
+	background-image: url('http://s3.amazonaws.com/eyeworksgroupcdn/wp-content/uploads/2015/06/12043432/Silver-Blur-Background-Wallpaper.jpg');
+	background-size: cover;
+  overflow-y: auto;
+}
+#wrap {
+	/* background-color: rgba(0,0,0,0.8);	 */
+  width: 280px; 
+  height: 280px; 
+  position: relative;
+  object-fit: cover;
+  overflow:visible; 
+  margin: 0 0 20px 20px; 
+  margin-top: 50px;
+  margin-bottom: -60px;
+  justify-content: center;
+  margin-left: 200px ;
+}
+#album {
+	position: absolute;
+	/* top: 12.5%;
+	left: 12.5%; */
+	/* height: 50vw;
+	width: 50%; */
+	/* max-height: 75%;
+	max-width: 75vh;
+  scale: 30%; */
+
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  max-height: initial; 
+  max-width: initial;
+  transform: scale(0.7); 
+  transform-origin: top right;
+  padding-top: 30px;
+}
+#cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/cover-art.jpg');
+	background-size: 100% 100%;
+	box-shadow: 5px 0 20px 0 rgba(0,0,0,0.6),
+	            inset 0 0 10px 5px rgba(255,255,255,0.2),
+			  inset 0 0 4px 2px rgba(0,0,0,0.2);
+	border-radius: 4px;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		background-image: url('http://i.imgur.com/i0fMWpe.jpg');
+		background-size: 100% 100%;
+		border-radius: 4px;
+		mix-blend-mode: screen;
+		opacity: 0.5;
+		content: '';
+	}
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 20;
+		width: 100%;
+		height: 100%;
+		background-image: url('https://orig06.deviantart.net/0124/f/2013/136/6/7/texture_326_by_sirius_sdz-d65gs3s.jpg');
+		background-size: 100% 100%;
+		border-radius: 4px;
+		mix-blend-mode: screen;
+		opacity: 0.2;
+		content: '';
+	}
+}
+#vinyl {
+		position: absolute;
+		top: 2.5%;
+		left: 2.5%;
+		z-index: 0;
+		width: 95%;
+		height: 95%;
+		display: block;
+		background-image: url('https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Music-PNG/Gramophone_Vinyl_LP_Record_PNG_Transparent_Clip_Art_Image.png?m=1462983196');
+		background-size: 106% 106%;
+		background-position: center;
+		box-shadow: 0 0 20px 4px rgba(0,0,0,0.6);
+		border-radius: 50%;
+		content: '';
+		animation: 5s linear spinThat infinite, 1s ease-out getOut 1s forwards;
+		&::before {
+			position: absolute;
+			top: 2.5%;
+			left: 2.5%;
+			z-index: 10;
+			width: 95%;
+			height: 95%;
+			background-image: url('http://www.designresourcebox.com/ths/diverse/blacktextures/82267467.jpg');
+			background-size: 100% 100%;
+			border-radius: 50%;
+			mix-blend-mode: screen;
+			opacity: 0.3;
+			content: '';
+		}
+		#print {
+			position: absolute;
+			top: 33%;
+			left: 33%;
+			height: 34%;
+			width: 34%;
+			box-shadow: inset 0 0 0 5px rgba(150,150,150,0.5);
+			background-image: url('http://assets.teamrock.com/image/14d29742-c6f7-43f6-bbe1-6bf7b3b34c6f?w=800');
+	background-size: cover;
+			border-radius: 50%;
+		}
+}
+
+@keyframes getOut {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 50%;
+	}
+}
+@keyframes spinThat {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.subheading {
+  font-family: revla-slab, serif;
+  font-weight: normal;
+  font-size: 48px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  margin-left: 110px;
+}
+
+footer{
+  margin: 50px;
+  margin-top: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 14px;
+}
