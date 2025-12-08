@@ -1,0 +1,187 @@
+html{
+font-family: halyard-text, sans-serif;
+font-weight: normal;
+font-style: normal;
+font-variation-settings: "wdth" 100;
+font-size:18px;
+min-width:370px;
+color: rgb(18, 10, 2)
+}
+
+body {
+font-family: halyard-text, sans-serif;
+color: #111;
+background: #fff;
+line-height: 1.55;
+padding: 0 1.5rem;
+max-width: 1500px;
+margin: auto;
+}
+
+section{
+display:block;
+}
+
+div.container.header-inner {
+    padding: 0;
+}
+
+.site-title {
+    font-family: beatle, sans-serif;
+    font-size: 100px;
+}
+
+a {
+text-decoration: none;
+color:black;
+}
+
+header {
+padding: 0rem;
+/* border-bottom: 1px solid lightpink; */
+}
+
+.site-sub{
+font-size:26px;
+font-weight: light;
+text-align:center;
+margin-bottom:20px;
+margin-top:0;
+color:black;
+}
+
+.title {
+font-size: 2rem;
+font-weight: 600;
+margin-bottom: 0rem;
+}
+
+h1{
+font-size:50px;
+text-align:center;
+margin-bottom:0;
+margin-top:0;
+color:black;
+}
+
+h2{
+font-size:30px;
+font-weight: light;
+text-align:left;
+margin-bottom: 20px;
+margin-top:0;
+color:black;
+}
+
+.subtitle {
+font-size: 1rem;
+color: #444;
+}
+
+
+main {
+display: flex;
+flex-direction: column;
+}
+
+.project {
+border-bottom: 1px solid #efefef;
+padding-bottom: 1.7rem;
+}
+
+.project h2 {
+font-size: 1.3rem;
+font-weight: 500;
+margin-bottom: .6rem;
+}
+
+.project p {
+max-width: 70ch;
+font-size: 1rem;
+color: #333;
+}
+
+
+.external {
+display: inline-block;
+margin-top: .6rem;
+font-size: .95rem;
+color: #0055ff;
+text-decoration: none;
+}
+
+.external:hover {
+text-decoration: underline;
+}
+
+
+footer {
+border-top: 1px solid #e5e5e5;
+padding: 1.7rem 0;
+font-size: .9rem;
+color: #666;
+text-align: center;
+}
+
+
+.project-grid {
+margin: 2.5rem 0 4rem;
+display: grid;
+gap: 2.2rem;
+grid-template-columns: 1fr; 
+}
+
+.grid-item {
+display: block;
+overflow: visible;
+border-radius: 16px;
+transition: transform 0.3s ease, filter 0.3s ease;
+align-items: center;
+}
+
+.grid-item img {
+width: 90%;
+height:400px;
+object-fit: cover;
+border-radius: 16px;
+margin: 0 auto;
+}
+
+.lead{
+text-align:center;
+}
+
+
+.grid-item:hover {
+transform: scale(1.03);
+filter: brightness(1.07);
+}
+
+
+@media (min-width: 650px) {
+.project-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+@media (min-width: 950px) {
+.project-grid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+p{
+font-size:17px;
+}
+
+
+header.site-header {
+/* background: linear-gradient(to right, #ffffff, #lightpink; 50%, #ffffff); */
+padding: 0rem;
+text-align: center;
+}
+
+.site-header{
+    margin: 0;
+}
